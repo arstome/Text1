@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>你输入的下列数据如下:</p>
+<table>
+<tr><td>consName:</td><td>{{ the_phrase }}</td></tr>
+<tr><td>type:</td><td>{{ the_letters }}</td></tr>
+</table>
+
+<p> "{{ the_phrase }}" 的星座运势为:</p>
+<h3>{{ the_results }}</h3>
+
+
+<form method='POST' action='/entry1'>
+<p><input value='下一个' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

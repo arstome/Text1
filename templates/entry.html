@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<p>使用此网页提交你的请求:</p>
+<tr><td>星座名称:</td><td><input name='consName' type='TEXT' width='60'></td></tr>
+<tr><td>运势类型:</td><td><input name='type' type='TEXT' width='60'></td></tr>
+</table>
+<p>输入完毕，请点击下列按钮:</p>
+<tr> 运势类型：today,tomorrow,week,month,year</tr>
+<p><input value='点击我有答案!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base_ywm.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4_ywm'>
+<table>
+<p>使用此网页提交你的请求:</p>
+<tr><td>具体地址:</td><td><input name='ipl' type='TEXT' width='60'></td></tr>
+<tr>注：城市名不是必须的。</tr>
+</table>
+<p>输入完毕，请点击下列按钮:</p>
+<p><input value='Do it!' type='SUBMIT'></p>
+</form>
+
+<form action='/tkx' method='POST' >
+</div>
+<p>想要查询IP地址</p>
+<p><input value='点击这里！' type='submit'></p>
+</form>
+
+{% endblock %}

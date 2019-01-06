@@ -1,0 +1,27 @@
+{% extends 'base_tkx.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4_cjl'>
+<table>
+<p>使用此网页提交你的请求:</p>
+<tr><td>星座名称:</td><td><input name='consName' type='TEXT' width='60'></td></tr>
+<tr><td>运势类型:</td><td><input name='type' type='TEXT' width='60'></td></tr>
+</table>
+<p>输入完毕，请点击下列按钮:</p>
+<p> 运势类型：today,tomorrow,week,month,year</p>
+<p><input value='点击我有答案!' type='SUBMIT'></p>
+</form>
+
+
+<form action='/ywm' method='POST' >
+</div>
+<p>想要查询IP地址</p>
+<p><input value='点击这里！' type='submit'></p>
+</form>
+
+
+
+{% endblock %}
